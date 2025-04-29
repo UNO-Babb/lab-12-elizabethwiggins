@@ -1,44 +1,48 @@
-Name:
+Name: Elizabeth Wiggins
 
-Number of elements:
+Number of elements: 10000
 
 Bubble Sort
-Sorted:
-Reversed:
-Random:
+Sorted: 2.56489 seconds
+Reversed: 5.67133 seconds
+Random: 4.43457 seconds
 
 Bubble Sort Early Exit
-Sorted:
-Reversed:
-Random:
+Sorted: 0.00052 s
+Reversed: 5.96403 s
+Random: 4.71962 s
 
 Selection Sort
-Sorted:
-Reversed:
-Random:
+Sorted: 2.15548 s
+Reversed: 2.10768 s
+Random: 2.08213 s
 
 Insertion Sort
-Sorted:
-Reversed:
-Random:
+Sorted: 0.00158 s
+Reversed: 5.72061 s
+Random: 2.98356 s
 
 Merge Sort
-Sorted:
-Reversed:
-Random:
+Sorted: 0.01750 s
+Reversed: 0.02307 s
+Random: 0.02014
 
 Questions to answer:
 1) What was the worst case scenario for any sorting technique?
-
+ The worst case scenario would be that the sorting does not work or takes too long.
 
 2) The first 3 sorts have the same runtime of O(n^2). Why were the times different? Why would one be more efficient than the others?
-
+The times could just be different by chance, since each runtime varies. However the selection sort appeared to be more efficient than the
+others so the process of swapping the largest numbers to their position at the end of list must have been a quicker process.
 
 3) Why was merge sort so much more efficient?
-
+    The merge sort has a faster average runtime than the other methods, of O(n*log(n))
 
 4) The built-in sorting technique for most programming languages is known as TimSort.
 This is a merge sort until the arrays have fewer than 10 elements, then it does an insertion sort. Why would this be useful?
-
+    This would be useful because merge sort is so quick, and insertion sort becomes very quick when the list is already mostly in order so 
+    together they would sort data very quickly and efficiently.
 
 5) What issues can you see with a recursive sorting technique like merge sort?
+With recursive sorting techniques, if just one part of the process has an error, the whole thing will probably be wrong because there are 
+so many steps, and each step builds off the result of the previous one.
